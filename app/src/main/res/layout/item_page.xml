@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="4dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:background="@drawable/bg_item_page_round">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pageIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:src="@drawable/ic_default_page"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/CustomShapeAppearanceOverlay"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+          >
+
+            <TextView
+                android:id="@+id/pageName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:layout_gravity="center"
+                android:text="stroad"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_size10"/>
+
+            <TextView
+                android:id="@+id/pageUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:visibility="gone"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="@dimen/text_size10"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

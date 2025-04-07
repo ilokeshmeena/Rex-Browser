@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="dynamic_style_attrs">
+        <attr name="background" format="reference" />
+        <attr name="backgroundDialog" format="reference" />
+        <attr name="foreground" format="reference" />
+        <attr name="popupTheme" format="reference" />
+        <attr name="divider" format="reference" />
+        <attr name="defaultRectRipple" format="reference" />
+        <attr name="defaultRoundRipple" format="reference" />
+        <attr name="transparentRoundRipple" format="reference" />
+        <attr name="transparentRectRipple" format="reference" />
+        <attr name="dialogRectRipple" format="reference" />
+        <attr name="dialogRoundRipple" format="reference" />
+        <attr name="selectableColor" format="reference" />
+        <attr name="selectableDrawer" format="reference" />
+        <attr name="menuIconTint" format="reference" />
+        <attr name="toolbarColor" format="reference" />
+        <attr name="statusBarColor" format="reference" />
+        <attr name="colorWarning" format="reference" />
+        <attr name="colorOk" format="reference" />
+    </declare-styleable>
+
+    <attr name="selectedBackground" format="reference|color">
+    </attr>
+    <attr name="colorPrimary" format="color">
+    </attr>
+    <attr name="bg_progress_adm" format="color"/>
+    <attr name="defTextColor" format="color"/>
+    <attr name="tint_icon" format="color"/>
+    <attr name="colorThread" format="color"/>
+
+    <declare-styleable name="AppCompatTheme">
+        <attr name="dialogTheme" format="reference">
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedProgressBar">
+        <attr name="bidirectionalAnimate" format="boolean">
+        </attr>
+
+        <attr name="progressColor" format="color">
+        </attr>
+    </declare-styleable>
+</resources>

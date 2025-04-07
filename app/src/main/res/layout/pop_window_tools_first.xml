@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables">
+
+                <LinearLayout
+                    android:id="@+id/action_shareF"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:padding="4dp"
+                        android:contentDescription="@null"
+                        android:gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_share_black_24dp"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_share"
+                        android:textColor="@color/textColor_Light"
+                        android:background="@android:color/transparent"
+
+                        android:textSize="@dimen/text_size13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lrDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/ic_toolbar_down"
+                        android:contentDescription="@null"
+                        app:tint="#747678" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/action_download"
+                        android:textColor="@color/textColor_Light"
+                        android:background="@android:color/transparent"
+                        android:textSize="@dimen/text_size13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lrShow_bookmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/ic_favorite_border_black_24dp"
+                        android:contentDescription="@null" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bookmarks"
+                        android:textColor="@color/textColor_Light"
+                        android:background="@android:color/transparent"
+                        android:textSize="@dimen/text_size13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settingsF"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/ic_settings"
+                        android:contentDescription="@null"
+                        app:tint="@color/tint" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings"
+                        android:textColor="@color/textColor_Light"
+                        android:background="@android:color/transparent"
+
+                        android:textSize="@dimen/text_size13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lrTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_theme" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:text="@string/themes"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                        android:textColor="@color/textColor_Light"
+                        android:textSize="@dimen/text_size13" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/exit_menu2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/ic_exit"
+                        android:contentDescription="@null" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/exit"
+                        android:textColor="@color/textColor_Light"
+                        android:background="@android:color/transparent"
+
+                        android:textSize="@dimen/text_size13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/novel_assistant"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                        android:singleLine="true"
+                        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

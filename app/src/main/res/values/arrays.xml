@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="bookmarks_choice">
+        <item>@string/open</item>
+        <item>@string/share</item>
+        <item>@string/copy</item>
+        <item>@string/delet</item>
+    </array>
+    <array name="fab_choice">
+        <item>Google</item>
+        <item>Yahoo</item>
+        <item>Bing</item>
+        <item>DuckDuckGo</item>
+        <item>Ask</item>
+        <item>Baidu(Chinese)</item>
+        <item>Yandex(Russian)</item>
+        <item>Lukayn</item>
+        <item>BrainTree</item>
+    </array>
+</resources>

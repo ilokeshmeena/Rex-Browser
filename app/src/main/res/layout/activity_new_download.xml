@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:background="@android:color/transparent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start|center"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/HeaderLayoutBase"
+
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:text="@string/edt_name"
+                    style="@style/DialogTitle"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/edit_webv"
+                    style="@style/ImageButton"
+                    android:layout_width="@dimen/icon_size"
+                    android:layout_height="@dimen/icon_size"
+                    android:layout_marginEnd="4dp"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_default_page"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/edit_site"
+                    style="@style/ImageButton"
+                    android:src="@drawable/ic_more" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/LayoutMiddle"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/LayoutMiddle"
+                    android:layout_marginBottom="10dp">
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/download_link"
+                        android:textSize="@dimen/text_small" />
+                </RelativeLayout>
+
+                <com.rexvit.browser.view.AdvancedAppCompatEditText
+                    android:id="@+id/edit_text_url"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="flagNoExtractUi"
+                    android:maxLines="2"
+                    android:textSize="@dimen/text_size14"
+                    android:theme="@android:style/Widget.AutoCompleteTextView"
+                    />
+
+                <RelativeLayout style="@style/LayoutMiddle"
+                    android:layout_marginTop="14dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/lrLoadPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        android:layout_marginEnd="10dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waiting for size..."
+                            android:textSize="@dimen/text_size10"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/colorDarkerGray"/>
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/edit_file"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/file_name"
+                        android:textSize="@dimen/text_small" />
+
+                    <TextView
+                        android:id="@+id/edit_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/edit_file"
+                        android:textSize="@dimen/text_ssmall"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_text_file_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_edittext"
+                    android:completionThreshold="1"
+                    android:inputType="textMultiLine"
+                    android:theme="@android:style/Widget.AutoCompleteTextView"
+                    android:maxLines="3"
+                    android:selectAllOnFocus="true"
+                    android:textSize="@dimen/text_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical">
+                    <RelativeLayout style="@style/LayoutMiddle"
+                        android:layout_marginBottom="10dp">
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/download_path"
+                            android:textSize="@dimen/text_small" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/LayoutMiddle"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edit_text_download_path"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:textSize="@dimen/text_ssmall"
+                                android:maxLines="2"
+                                android:theme="@android:style/Widget.AutoCompleteTextView"
+                                />
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/ivFolder"
+                            style="@style/ImageButton"
+                            android:layout_width="@dimen/icon_size"
+                            android:layout_height="@dimen/icon_size"
+                            android:padding="3dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/ic_folder_dow" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_gravity="end|bottom|center"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="13dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="22dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorDarkerGray"
+                    />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/fab_new_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/download"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="13dp"
+                    android:layout_gravity="end"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

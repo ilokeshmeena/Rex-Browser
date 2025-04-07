@@ -1,0 +1,19 @@
+
+I
+gradle/libs.versions.toml,d\7\d7595319a0658be6f1ed500ad590d42e4b28bc4f
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
+^
+.app/src/main/java/com/test/koibrowser/App.java,b\b\bb7b2c0c9bc24d1f3f3bfb1cea0d9ae90e5d9013
+r
+Bapp/src/main/java/com/test/koibrowser/activities/MainActivity.java,9\7\97c12914a72ff2e979a390ac3dbb7768d9d80b19
+F
+app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
+D
+app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
+C
+settings.gradle.kts,7\4\749edfcc96398253e5b3416184e95c46621da850

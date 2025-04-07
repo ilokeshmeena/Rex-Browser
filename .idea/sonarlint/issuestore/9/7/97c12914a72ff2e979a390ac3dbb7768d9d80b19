@@ -1,0 +1,33 @@
+
+u
+java:S2293¬"YReplace the type specification in this constructor call with the diamond operator ("<>").(ËŸ´çùÿÿÿÿ
+l	java:S117÷"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ç¾”üÿÿÿÿ
+l	java:S117ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹š–Üøÿÿÿÿ
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²¡ó„
+l	java:S117ú"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ª¶úÿÿÿÿ
+g	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥ûÎê
+g	java:S117ü"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ßˆ
+g	java:S117ş"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßêúÕ
+g	java:S117€"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÌ„ï
+l	java:S117‚"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëç±ÿÿÿÿÿ
+f	java:S117…"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÊÏâ
+g	java:S117÷"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßêúÕ
+g	java:S117ù"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥³é‡
+l	java:S117û"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ëç±ÿÿÿÿÿ
+?
+java:S5411Á"(Use a primitive boolean expression here.(ÙêáÊ
+Z
+java:S1226È">Introduce a new variable instead of reusing the parameter "i".(šà×ıÿÿÿÿ
+c
+java:S1659æ"GDeclare "themeLight" and all following declarations on a separate line.(œÍüıÿÿÿÿ
+K
+java:S1481¹"/Remove this unused "sharedPref" local variable.(Œ²„¹ÿÿÿÿÿ
+i	java:S100é"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Óûÿÿÿÿ
+E
+java:S1481”")Remove this unused "var6" local variable.(äÈŒ‰ıÿÿÿÿ
+B
+java:S1481™"+Remove this unused "unused" local variable.(ºšÎ
+C
+java:S1481Ô"'Remove this unused "id" local variable.(¶ıÃ˜ùÿÿÿÿ
+k
+java:S3252‡"OUse static access with "android.content.DialogInterface" for "BUTTON_POSITIVE".(üš‘êúÿÿÿÿ

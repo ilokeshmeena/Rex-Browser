@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:background="#f0f0f0"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/ivBackward"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/ic_arrow_left" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/ivForward"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/ivRefreshing"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:src="@drawable/ic_refresh" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/btnDown"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:padding="1dp"
+                android:src="@drawable/ic_toolbar_down"
+                app:tint="@color/tint_ic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/add_bookmarks"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:contentDescription="Add to bookmarks"
+                android:padding="1dp"
+                android:src="@drawable/ic_add_bm"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="gone"
+            >
+
+            <ImageButton
+                android:id="@+id/page_info"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_page_info"
+                android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="225dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/action_new_Tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:background="@drawable/ic_bottom_bar_tabmanager"
+                            android:contentDescription="@null"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_add_black" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/action_new_tab"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/action_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:padding="1dp"
+                            android:src="@drawable/ic_home" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="Home"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lrShow_bookmarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_favorite_border_black_24dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/bookmarks"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lrCapture_screen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_capture_screen" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/capture_screen"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lrAddToHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:padding="3dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_add_black" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/add_to_home_screen"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lrAddToQuickAccess"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:padding="0dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_add_to_home" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="Add to Quick Access"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lrDownload"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_toolbar_down"
+                            app:tint="@color/tint" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/action_download"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:background="#d6d6d6"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <LinearLayout
+                        android:id="@+id/action_share"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@null"
+                            android:gravity="center_vertical"
+                            android:padding="4dp"
+                            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/action_share"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lrFind_on_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_context_menu_find" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/find_in_page"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/translate"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_translate"
+                            app:tint="@color/tint" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/translate"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+
+                    </LinearLayout>
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:background="#d6d6d6"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/searchEngineClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="1dp"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="6dp"
+                            app:srcCompat="@drawable/ic_searchengine" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/set_search_engine"
+                                android:fontFamily="@font/novel_assistant"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="@color/textColor_Light"
+                                android:textSize="@dimen/text_size13" />
+
+                            <TextView
+                                android:id="@+id/setSearchenginetext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Google"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="0dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="2dp"
+                            app:srcCompat="@drawable/ic_picture" />
+
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/loadImages"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:checked="true"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/enable_images"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13"
+                            android:thumb="@drawable/comm_switch_thumb_style"
+                            app:track="@drawable/comm_switch_track_selector" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="0dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="2dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_pc" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/desktopSwith"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:checked="false"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/desktop_mode"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13"
+                            android:thumb="@drawable/comm_switch_thumb_style"
+                            app:track="@drawable/comm_switch_track_selector" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="0dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="2dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_tabs" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:id="@+id/closetabsSwitch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:checked="false"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/close_tabs_on_exit"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13"
+                            android:thumb="@drawable/comm_switch_thumb_style"
+                            app:track="@drawable/comm_switch_track_selector" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="0dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="0dp"
+                            android:contentDescription="@null"
+                            android:gravity="center_vertical"
+                            app:srcCompat="@drawable/ic_ad_block"
+                            app:tint="@color/tint_ic2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/action_toggle_ad_blocking"
+                                    android:fontFamily="@font/novel_assistant"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:textColor="@color/textColor_Light"
+                                    android:textSize="@dimen/text_size13" />
+
+                                <TextView
+                                    android:id="@+id/adsCount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/adBlock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:thumb="@drawable/comm_switch_thumb_style"
+                                app:track="@drawable/comm_switch_track_selector" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.01dp"
+                        android:background="#d6d6d6"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_settings" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/settings"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lrTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_theme" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/themes"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/help"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_help" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/action_help"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/exit_menu2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="6dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_exit" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/novel_assistant"
+                            android:gravity="center_vertical"
+                            android:maxLines="1"
+                            android:minHeight="?android:attr/listPreferredItemHeightSmall"
+                            android:singleLine="true"
+                            android:text="@string/exit"
+                            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+                            android:textColor="@color/textColor_Light"
+                            android:textSize="@dimen/text_size13" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

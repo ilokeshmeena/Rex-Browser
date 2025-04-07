@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_home"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:icon="@drawable/ic_more"
+        android:orderInCategory="101"
+        android:title="@string/more"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_download_all_parallel"
+                android:icon="@drawable/ic_action_play"
+                android:title="@string/start_all"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/action_pause_all"
+                android:icon="@drawable/ic_action_pause"
+                android:title="@string/pause_all"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+</menu>

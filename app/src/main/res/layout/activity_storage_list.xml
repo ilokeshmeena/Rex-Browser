@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_storage_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/textsizetoolbar"
+        app:title="@string/storage" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/grid_layout_storages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="24.0dip"
+        android:paddingLeft="?listPreferredItemPaddingRight"
+        android:paddingRight="?listPreferredItemPaddingRight"
+        app:alignmentMode="alignBounds"
+        app:columnCount="3"
+        app:orientation="horizontal"
+        app:useDefaultMargins="true" />
+</LinearLayout>

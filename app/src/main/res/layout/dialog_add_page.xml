@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size16"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="@string/addnewpage"
+        android:padding="@dimen/dp_8"/>
+    <EditText
+        android:id="@+id/editTextPageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size13"
+        android:hint="@string/enter_page_name" />
+
+    <EditText
+        android:id="@+id/editTextPageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size13"
+        android:hint="@string/enter_page_url" />
+
+
+</LinearLayout>

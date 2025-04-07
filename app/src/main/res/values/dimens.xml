@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="text_ssmall">13sp</dimen>
+    <dimen name="margin_edittext">4dp</dimen>
+    <dimen name="buttons_minheight">72dp</dimen>
+
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="toolbar_text">18sp</dimen>
+    <dimen name="md_action_corner_radius">20dp</dimen>
+    <dimen name="md_bg_corner_radius">16dp</dimen>
+
+    <dimen name="text_size13">13sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="comm_switch_circle_size">15dp</dimen>
+    <dimen name="comm_switch_height">13dp</dimen>
+    <dimen name="comm_switch_width">26dp</dimen>
+    <dimen name="text_size9">9sp</dimen>
+    <dimen name="text_size10">10sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="text_size12">12sp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="icon_size">32dp</dimen>
+    <dimen name="dp12">12dp</dimen>
+</resources>
